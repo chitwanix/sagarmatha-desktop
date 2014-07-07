@@ -94,7 +94,7 @@ AC_SUBST(XLIB_LIBS)
 
 dnl pkg-config dependency checks
 
-PKG_CHECK_MODULES(CINNAMON_DESKTOP, gdk-pixbuf-2.0 >= $GDK_PIXBUF_REQUIRED
+PKG_CHECK_MODULES(SAGARMATHA_DESKTOP, gdk-pixbuf-2.0 >= $GDK_PIXBUF_REQUIRED
                                     gtk+-3.0 >= $GTK_REQUIRED
                                     glib-2.0 >= $GLIB_REQUIRED
                                     gio-2.0 >= $GLIB_REQUIRED

@@ -1,30 +1,30 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.sagarmatha.desktop.sound" path="/org/sagarmatha/desktop/sound/">
-    <key name="event-sounds" type="b">
+  <schema path="/org/sagarmatha/desktop/sound/" id="org.sagarmatha.desktop.sound">
+    <key type="b" name="event-sounds">
       <default>true</default>
-      <_summary>Sounds for events</_summary>
-      <_description>Whether to play sounds on user events.</_description>
+      <summary>Sounds for events</summary>
+      <description>Whether to play sounds on user events.</description>
     </key>
-    <key name="theme-name" type="s">
+    <key type="s" name="theme-name">
       <default>'freedesktop'</default>
-      <_summary>Sound theme name</_summary>
-      <_description>The XDG sound theme to use for event sounds.</_description>
+      <summary>Sound theme name</summary>
+      <description>The XDG sound theme to use for event sounds.</description>
     </key>
-    <key name="input-feedback-sounds" type="b">
+    <key type="b" name="input-feedback-sounds">
       <default>false</default>
-      <_summary>Input feedback sounds</_summary>
-      <_description>Whether to play sounds on input events.</_description>
+      <summary>Input feedback sounds</summary>
+      <description>Whether to play sounds on input events.</description>
     </key>
-    <key name="volume-sound-enabled" type="b">
+    <key type="b" name="volume-sound-enabled">
       <default>false</default>
-      <_summary>Whether to play a sound when the volume is changed</_summary>
-      <_description>Whether to play a sound when the volume is changed.</_description>
+      <summary>Whether to play a sound when the volume is changed</summary>
+      <description>Whether to play a sound when the volume is changed.</description>
     </key>    
-    <key name="volume-sound-file" type="s">
+    <key type="s" name="volume-sound-file">
       <default>""</default>
-      <_summary>Which sound to play when the volume is changed</_summary>
-      <_description>Which sound to play when the volume is changed.</_description>
+      <summary>Which sound to play when the volume is changed</summary>
+      <description>Which sound to play when the volume is changed.</description>
     </key>     
   </schema>
 </schemalist>

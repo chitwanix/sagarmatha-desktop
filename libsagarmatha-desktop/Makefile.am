@@ -6,7 +6,7 @@ lib_LTLIBRARIES = libsagarmatha-desktop.la
 AM_CPPFLAGS =							\
 	-I$(top_srcdir)						\
 	-I$(srcdir)/libgsystem					\
-	$(CINNAMON_DESKTOP_CFLAGS)					\
+	$(SAGARMATHA_DESKTOP_CFLAGS)					\
 	$(XLIB_CFLAGS)						\
 	-DG_LOG_DOMAIN=\"SagarmathaDesktop\"				\
 	-DGNOMELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale\""	\
@@ -17,8 +17,8 @@ AM_CPPFLAGS =							\
 AM_CFLAGS = $(WARN_CFLAGS)
 
 libgsystem_srcpath := libgsystem
-libgsystem_cflags = $(CINNAMON_DESKTOP_CFLAGS)
-libgsystem_libs = $(CINNAMON_DESKTOP_LIBS)
+libgsystem_cflags = $(SAGARMATHA_DESKTOP_CFLAGS)
+libgsystem_libs = $(SAGARMATHA_DESKTOP_LIBS)
 include libgsystem/Makefile-libgsystem.am
 
 introspection_sources = 		\
@@ -48,7 +48,7 @@ libsagarmatha_desktop_la_SOURCES = 	\
 libsagarmatha_desktop_la_LIBADD =	\
 	$(XLIB_LIBS)		\
 	$(LIBM)			\
-	$(CINNAMON_DESKTOP_LIBS)	\
+	$(SAGARMATHA_DESKTOP_LIBS)	\
 	libgsystem.la           \
 	-lrt
 
@@ -130,13 +130,13 @@ sagarmatha_rr_debug_SOURCES =	\
 	sagarmatha-rr-debug.c
 
 sagarmatha_rr_debug_LDADD =		\
-	$(CINNAMON_DESKTOP_LIBS)	\
+	$(SAGARMATHA_DESKTOP_LIBS)	\
 	$(lib_LTLIBRARIES)	\
 	$(XLIB_LIBS)
 
 noinst_PROGRAMS = test-xkb-info test-pnp-ids test-wall-clock
 test_xkb_info_LDADD =		\
-	$(CINNAMON_DESKTOP_LIBS)	\
+	$(SAGARMATHA_DESKTOP_LIBS)	\
 	$(lib_LTLIBRARIES)	\
 	$(XLIB_LIBS)
 
